@@ -1,0 +1,129 @@
+<!-- html es el atajo para la plantilla de html que ajusta tipo de documento html5 desde la librería EMMET
+  agrega las etiquetas cuerpo, cabezera, html y metadatos.
+Para comentarios mediante EMMET, se usa combak -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Refencias HTML</title>
+  </head>
+  <body>
+    <h1>Referencias</h1>
+
+    <ul>
+      <li><h1>&lt &gt</h1> <!-- &lt Representa y &gt  <-->
+      <p>Estos símbolos son los más relevantes del lenguage, ya que establecen las etiquetas, para escribirlas dento de un documento html sin que se
+      detecte como una etiqueta, se deben poner las letras <strong>(& l t)</strong> todo pegado para el símbolo &lt y <strong>(& g t)</strong> todo pegado para el símbolo &gt</p></li>
+      <li>&lt h1 &gt Texto &lt / h1&gt , representa una etiqueta, este tipo de etiqueta se denomína cerrada. Para este caso las estiquetas con <em>hi</em> corresponden a niveles de títulos,
+      entre mayor sera i, menor será el tamaño del título:
+      <ul>
+        <li><h1>Encabezado h1</h1></li>
+        <li><h2>Encabezado h2</h2></li>
+        <li><h3>Encabezado h3</h3></li>
+        <li><h4>Encabezado h4</h4></li>
+        <li><h5>Encabezado h5</h5></li>
+        <li><h6>Encabezado h6</h6></li>
+      </ul>
+      <p>Si se establecen valores de i mayores a 6, no tendrá ningún efecto sobre el texto.</p></li>
+      <li>Para resaltar un texto se utilizan varias etiquetas:
+        <ul>
+          <li>&lt strong &gt: <strong>Restaltar y enfatizar en negrita</strong></li>
+          <li>&lt bold &gt:   <b> Restaltar en negrita</b></li>
+          <li>&lt i &gt:   <i> Restaltar en itálica</i></li>
+          <li>&lt em &gt:<em>Resaltar y enfatizar en itálica</em></li>
+        </ul>
+      </li>
+    <li>Regla horizontal:
+      &lt hr &gt: <strong>NO NECESITA ETIQUETA DE CIERRE</strong>
+      <hr>
+    </li>
+    <li>Atributos en las etiquetas: &lt etiqueta atributos &gt, ejemplo:  &lt hr size="5" &gt, se pone una línea recta horizontal, pero con tamaño de 5 pixeles. Los atributos se pueden consultar en las
+      múltiples páginas de documentación disponibles.
+      <hr size = "5">
+    </li>
+    <li>Parrafos o parágrafos: Se utilizar la etiqueta &lt p &gt.
+      <p>Dentro de esta etiqueta, todo el texto estará sujeto a los atributos que se le den al parrago, es decir comparten mismo estilo color y demás, <em>a menos que se decida lo contrario.</em></p>
+    </li>
+    <li>Saltos de línea: &lt br &gt.
+      <br>
+      Un salto de línea.
+      <br>
+      <br>
+      Dos saltos de línea.
+      </li>
+      <li>Puntos de anclaje &lt a &gt, usado comunmente para los hipervínculos:
+      <p>&lt a href="pagina_principal.html" &gt Página de Inicio &lt a &gt, lo que está en comillas es el hipervínculo a la página, y el texto lo que se mostrará en la página (en este caso, página de inicio). <a href="index.html">Página de Inicio</a></p>
+      </li>
+      <li>Imágenes: &lt img src="ruta" alt="texto alternativo" &gt. La ruta puede ser local o una url en la web, el texto alternativo puede ser una descripción de lo que hay en la imagen para efectos
+      de una mejor coincidencia en casos de busqueda de google.
+      <img src="grafica_1.png" alt="eurusd trading">
+      <p>Naturalmente tambien posee atributos, por lo que se pueden modificar algunas características de la misma, por ejemplo, establecer que la imagen conserve sus proporciones, pero con una altura de 200pix.</p>
+      <img src="grafica_1.png" alt="eurusd trading" height="200">
+      </li>
+      <li><strong>Tablas:</strong>Tienen la etiqueta &lt Table &gt, y se estructura así:
+      <br>
+      <br>
+      &lt Table &gt <br>
+      &lt thead &gt <br>
+      &lt tr &gt Define las filas <br>
+      &lt th &gt Define las columnas, en este caso especial las del encabezado de la tabla.<br>
+      &lt /th &gt <br>
+      &lt /tr &gt <br>
+      &lt /thead &gt <br>
+      &lt tbody &gt <br>
+      &lt tr &gt Define las filas <br>
+      &lt td &gt Define las columnas (datos).<br>
+      &lt /td &gt <br>
+      &lt /tr &gt <br>
+      &lt /tbody &gt <br>
+      &lt tfoot &gt <br>
+      &lt /tfoot &gt <br>
+      &lt /Table &gt <br>
+      <br>
+      <table>
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Trabajo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2021</td>
+            <td>Docente Tiempo Completo Ocasional. Universidad de Pamplona - Colombia</td>
+          </tr>
+          <tr>
+            <td>2020</td>
+            <td>Auxiliar laboratorio de Ondas.</td>
+          </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+      </table>
+      </li>
+
+      <li>Tablas para el diseño de la página:<br>
+        <table cellspacing="15">
+          <tr>
+            <td><img src="roberto_cuellar_profile.png" alt="roberto_cuellar_foto_de_perfil" height="200"></td>
+            <td><h1>Roberto Antonio Cuellar Lozano</h1>
+            <!--<p><i>Físico y Buena Persona</i></p> La etiqueta i, me define letra cursiva, y la etiqueta p me define un parrafo -->
+            <p><em>Físico y Buena Persona</em></p><!-- La etiqueta em, me define letra cursiva y enfatíza, y la etiqueta p me define un parrafo --></td>
+          </tr>
+        </table>
+      </li>
+
+
+
+
+
+    </ul>
+
+
+
+    <a href="index.html"><h3><strong>Volver</strong></h3></a>
+
+  </body>
+</html>
