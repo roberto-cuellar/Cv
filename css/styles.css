@@ -1,0 +1,137 @@
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+}
+
+
+body{
+  background-color: #0D1A2D;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 0.9rem;
+}
+
+
+.nft1_card{
+  width: 300px;
+  background-color: #15273F;
+  border-radius: 16px;
+  display: inline-block;
+  margin: auto 20px auto 20px;
+}
+
+
+.nft_img{
+  display: block;
+  position: relative;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.3rem;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.nft1_card:hover{
+  cursor: pointer;
+  box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+}
+
+.nft1_card:hover .img_hover{
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.nft_description{
+  line-height: 1.2;
+  font-size: 0.8rem;
+  color: #4C617E;
+}
+
+
+.nft1_card:hover .nft_name{
+  color: #208C96;
+}
+
+.nft1_card:hover .nombre{
+  color: #208C96;
+}
+
+.nft1_card:hover .time{
+  color: #208C96;
+}
+
+
+
+.nft_name{
+  color: #C8CFDF;
+  font-family: "Arial",sans-serif;
+}
+
+.division{
+  width: 80%;
+  border-width: 2px;
+  border-style: solid;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-color: #829AB6;
+  filter: blur(1px);
+}
+
+.alineacion{
+  padding-left: 1.9rem;
+}
+
+.price{
+  display: inline-block;
+  font-family: "Arial",sans-serif;
+}
+
+.time{
+  display: inline-block;
+  margin-left: 52px;
+  color: #4C617E;
+}
+
+.creador_foto{
+  height: 2rem;
+  position: relative;
+  margin-top: 6px;
+  margin-left: 1.9rem;
+  margin-bottom: 6px;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #979CA0;
+}
+
+.creador{
+  display: inline-block;
+  position: absolute;
+  margin-top:14px;
+  margin-left: 6px;
+  color: #6D829D;
+}
+
+
+.nombre{
+  color: #9AA3B2;
+  font-weight: bold;
+}
+
+.price{
+  color: #208C96;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.img_hover{
+  position: absolute;
+  width: 240px;
+  margin-left: 30px;
+  z-index: 2;
+  opacity: 0.0;
+  transition: 0.32s ease;
+}
